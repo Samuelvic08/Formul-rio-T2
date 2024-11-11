@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário T2</title>
+  </head>
+  <body>
+    <header>
+      <h1>Cadastre-se</h1>
+      <h2>Compre ingressos e combos de pipoca com conforto e comodidade.</h2>
+    </header>
+
+    <main>
+      <form action="">
+        <fieldset>
+          <legend>Preencha os campos</legend>
+
+          <div>
+            <label for="nome"> Nome: </label>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Digite seu nome"
+            />
+          </div>
+          <div>
+            <label for="email"> Email: </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Digite seu email"
+            />
+          </div>
+          <div>
+            <label for="senha">Senha:</label>
+            <input
+              type="password"
+              name="senha"
+              id="senha"
+              placeholder="Digite sua senha"
+            />
+          </div>
+        </fieldset>
+        <fieldset>
+            <label for="estados">Estado:</label>
+  
+            <select name="estado" id="estado">
+              <option value="AC">AC</option>
+              <option value="SP">SP</option>
+              <option value="RJ">RJ</option>
+              <option value="PB">PB</option>
+            </select>
+
+            <label for="nascimento">data de nascimento</label> 
+            <input type="date" name="nascimento" id="nascimento" />
+
+            <label for="foto">selecione uma foto</label> 
+            <input type="file" name="foto" id="foto" 
+            accept="image/png , image/jpeg , doc/pdf" />
+          </fieldset>
+
+          <fieldset>
+<legend>voce e um robo</legend>
+
+<input type="radio" name="robo" id="sim"/>
+<label for="sim">sou um robo</label>
+
+<input type="radio" name="robo" id="nao">
+<label for="nao">nao sou um robo</label>
+
+<div>
+    <input type="checkbox" name="acordo" id="acordo"/>
+    <label for="acordo">acordo que meus dados sejam compartilhados na internet.</label>
+</div>
+
+          </fieldset>
+
+          <input type="submit" value="enviar" />
+
+          <button type="submit">enviar</button>
+          <button type="reset">resetar</button>
+      </form>
+    </main>
+  </body>
+</html>
